@@ -1,5 +1,6 @@
 package services;
 import java.math.BigDecimal;
+import java.util.List;
 
 import dao.ContributionDAO;
 import model.Contribution;
@@ -27,5 +28,21 @@ public class ContributionService {
 		contributionDAO.save(contribution);
 		
 		return contribution;
+	}
+	
+	public void updateContribution(Contribution contribution) {
+		contributionDAO.update(contribution);
+	}
+	
+	public Contribution getContribution(int id) {
+		return contributionDAO.findById(id);
+	}
+	
+	public List<Contribution> getAllContribution(){
+		return contributionDAO.findAll();
+	}
+	
+	public void removeContribution(int id) {
+		contributionDAO.delete(id);
 	}
 }
