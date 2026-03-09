@@ -27,7 +27,7 @@ public class EmployeeServlet extends HttpServlet {
 
         request.setAttribute("employees", employees);
 
-        request.getRequestDispatcher("/WEB-INF/views/employees.jsp")
+        request.getRequestDispatcher("/WEB-INF/views/Employees.jsp")
                 .forward(request, response);
     }
 

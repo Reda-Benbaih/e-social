@@ -10,8 +10,8 @@
             <tr>
                 <td>${emp.id}</td>
                 <td>${emp.name}</td>
-                <td>${emp.salary}</td>
-                <td>${emp.employerId}</td>
+                <td>${emp.monthlySalary}</td>
+                <td>${emp.employer.id}</td>
             </tr>
         </c:forEach>
     </table>

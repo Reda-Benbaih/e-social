@@ -30,7 +30,7 @@ public class ContributionServlet extends HttpServlet {
 
         request.setAttribute("contributions", contributions);
 
-        request.getRequestDispatcher("/WEB-INF/views/contributions.jsp")
+        request.getRequestDispatcher("/WEB-INF/views/Contributions.jsp")
                 .forward(request, response);
     }
 

@@ -23,7 +23,7 @@ public class EmployerServlet extends HttpServlet {
 
         request.setAttribute("employers", employers);
 
-        request.getRequestDispatcher("/WEB-INF/views/employers.jsp")
+        request.getRequestDispatcher("/WEB-INF/views/Employers.jsp")
                .forward(request, response);
     }
 

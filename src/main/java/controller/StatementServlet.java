@@ -27,7 +27,7 @@ public class StatementServlet extends HttpServlet {
 
         request.setAttribute("statements", statements);
 
-        request.getRequestDispatcher("/WEB-INF/views/statements.jsp")
+        request.getRequestDispatcher("/WEB-INF/views/Statements.jsp")
                 .forward(request, response);
     }
 
